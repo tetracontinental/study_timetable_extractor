@@ -1,2 +1,7 @@
+#pdftoscv用のライブラリ
 spire.pdf
 pandas
+#スクレイピング用のライブラリ
+chromedriver-binary==128.*
+selenium
+python-dotenv

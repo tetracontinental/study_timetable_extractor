@@ -3,7 +3,7 @@ from spire.pdf import PdfDocument, PdfTableExtractor
 import csv
 
 # 入力ディレクトリのパス
-input_pdf_dir = "input_pdf"
+input_pdf_dir = "input_pdf/☆時間割変更-20240903T072808Z-001/☆時間割変更/"
 
 # 出力ディレクトリのパス
 output_csv_dir = "output_csv"
@@ -39,7 +39,7 @@ for filename in os.listdir(input_pdf_dir):
                     for col in range(colCount):
                         # セルのテキストを取得
                         text = table.GetText(row, col)
-                        text = text.replace("\n", "").replace("\r", "")
+                        text = text.replace("/n", "").replace("/r", "")
                         rowData.append(text)
                     tableData.append(rowData)
                 # テーブルデータをCSVファイルに保存
