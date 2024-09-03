@@ -1,0 +1,28 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+*.env
+
+# Flask
+instance/
+.webassets-cache
+
+# PDF to CSV
+*.csv
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Miscellaneous
+.DS_Store
+
+/dev
+
+requirements-dev.txt
+output_csv
+input_pdf
